@@ -1,1 +1,1 @@
-# examples
+# My examples for various projects
