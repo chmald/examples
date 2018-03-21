@@ -1,0 +1,12 @@
+[submodule "DockerImages/azure-linux-nodejs-hello-world"]
+	path = DockerImages/azure-linux-nodejs-hello-world
+	url = https://github.com/chmald/azure-linux-nodejs-hello-world.git
+[submodule "DockerImages/azure-linux-nodejs-imagemagick"]
+	path = DockerImages/azure-linux-nodejs-imagemagick
+	url = https://github.com/chmald/azure-linux-nodejs-imagemagick.git
+[submodule "DockerImages/azure-linux-ruby"]
+	path = DockerImages/azure-linux-ruby
+	url = https://github.com/chmald/azure-linux-ruby.git
+[submodule "DockerImages/azure-linux-java-tomcat"]
+	path = DockerImages/azure-linux-java-tomcat
+	url = https://github.com/chmald/azure-linux-java-tomcat.git
