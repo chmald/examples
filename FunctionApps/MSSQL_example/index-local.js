@@ -1,6 +1,6 @@
 const sql = require('mssql');
 const config = {
-    user: 'cmaldonado',
+    user: 'username',
     password: 'password',
     server: 'mssql-server-name.database.windows.net',
     database: 'database-name',
