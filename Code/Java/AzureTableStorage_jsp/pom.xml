@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sample.app</groupId>
+  <artifactId>sample-app</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>SampleApp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!-- Place dependencies here -->
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-storage</artifactId>
+      <version>5.1.0</version>
+    </dependency>
+    <dependency>
+	<groupId>com.microsoft.azure</groupId>
+	<artifactId>azure-documentdb</artifactId>
+	<version>LATEST</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <!-- Skip deploying the examples, the source is what is
+               useful and will be bundled with the main assembly -->
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
