@@ -10,3 +10,6 @@
 [submodule "DockerImages/azure-linux-java-tomcat"]
 	path = DockerImages/azure-linux-java-tomcat
 	url = https://github.com/chmald/azure-linux-java-tomcat.git
+[submodule "DockerImages/azure-linux-nodejs-react-app"]
+	path = DockerImages/azure-linux-nodejs-react-app
+	url = https://github.com/chmald/azure-linux-nodejs-react-app.git
