@@ -13,3 +13,6 @@
 [submodule "DockerImages/azure-linux-nodejs-react-app"]
 	path = DockerImages/azure-linux-nodejs-react-app
 	url = https://github.com/chmald/azure-linux-nodejs-react-app.git
+[submodule "DockerImages/azure-linux-python-flask-api"]
+	path = DockerImages/azure-linux-python-flask-api
+	url = git@github.com:chmald/azure-linux-python-flask-api.git
