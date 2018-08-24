@@ -4,7 +4,5 @@ services:
       image: 'chmald/azure-linux-flask-rest-api:latest'
       ports:
       - '80:8080'
-      volumes:
-      - ${WEBAPP_STORAGE_HOME}/site:/opt/app
     redis:
       image: 'redis:alpine'
