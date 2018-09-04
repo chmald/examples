@@ -16,3 +16,15 @@
 [submodule "DockerImages/azure-linux-python-flask-api"]
 	path = DockerImages/azure-linux-python-flask-api
 	url = git@github.com:chmald/azure-linux-python-flask-api.git
+[submodule "OtherExamples/Toan/toan-angular2-sample"]
+	path = OtherExamples/Toan/toan-angular2-sample
+	url = https://github.com/toanms/toan-angular2-sample.git
+[submodule "OtherExamples/Toan/toan-reactjs-sample"]
+	path = OtherExamples/Toan/toan-reactjs-sample
+	url = https://github.com/toanms/toan-reactjs-sample.git
+[submodule "OtherExamples/Toan/toan-jenkins-azure-linux"]
+	path = OtherExamples/Toan/toan-jenkins-azure-linux
+	url = https://github.com/toanms/toan-jenkins-azure-linux.git
+[submodule "DockerImages/azure-linux-nodejs-custom"]
+	path = DockerImages/azure-linux-nodejs-custom
+	url = git@github.com:chmald/azure-linux-nodejs-custom.git
