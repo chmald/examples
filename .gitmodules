@@ -28,3 +28,6 @@
 [submodule "DockerImages/azure-linux-nodejs-custom"]
 	path = DockerImages/azure-linux-nodejs-custom
 	url = git@github.com:chmald/azure-linux-nodejs-custom.git
+[submodule "DockerImages/azure-linux-wordpress-local"]
+	path = DockerImages/azure-linux-wordpress-local
+	url = git@github.com:chmald/azure-linux-wordpress-local.git
