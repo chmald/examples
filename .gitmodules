@@ -31,3 +31,6 @@
 [submodule "DockerImages/azure-linux-wordpress-local"]
 	path = DockerImages/azure-linux-wordpress-local
 	url = git@github.com:chmald/azure-linux-wordpress-local.git
+[submodule "Code/Python/python-django-upload"]
+	path = Code/Python/python-django-upload
+	url = git@github.com:chmald/python-django-upload.git
