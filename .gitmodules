@@ -34,3 +34,6 @@
 [submodule "Code/Python/python-django-upload"]
 	path = Code/Python/python-django-upload
 	url = https://github.com/chmald/python-django-upload.git
+[submodule "FunctionApps/azure-docker-linux-function-app-javascript"]
+	path = FunctionApps/azure-docker-linux-function-app-javascript
+	url = https://github.com/chmald/azure-docker-linux-function-app-javascript.git
