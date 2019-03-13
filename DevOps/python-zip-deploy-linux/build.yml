@@ -1,0 +1,19 @@
+pool:
+  vmImage: Hosted VS2017
+steps:
+- task: ArchiveFiles@2
+  displayName: 'Archive $(System.DefaultWorkingDirectory)'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+    archiveFile: '$(System.DefaultWorkingDirectory)/package.zip'
+
+- task: AzureRmWebAppDeployment@4
+  displayName: 'Azure App Service Deploy: {site-name}'
+  inputs:
+    azureSubscription: {azure-subscription}
+    appType: webAppLinux
+    WebAppName: {site-name}
+    packageForLinux: '$(System.DefaultWorkingDirectory)/package.zip'
+    RuntimeStack: 'PYTHON|3.7'
+

@@ -1,0 +1,28 @@
+pool:
+  vmImage: Hosted VS2017
+steps:
+- task: UsePythonVersion@0
+  displayName: 'Use Python 3.6'
+  inputs:
+    versionSpec: 3.6
+
+- script: |
+   rmdir /q /s env
+   python -m pip install --upgrade pip
+   python -m pip install virtualenv
+   python -m virtualenv env
+   env\scripts\pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive $(System.DefaultWorkingDirectory)'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+    archiveFile: '$(Build.ArtifactStagingDirectory)/package.zip'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/package.zip'
+
